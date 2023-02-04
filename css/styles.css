@@ -10,9 +10,12 @@
 --modalOverlay: rgb(46, 47, 66, 0.4);
 --heroBackground: rgb(46, 47, 66, 0.7);
 --hero: #ffffff;
+--body: #e5e5e5;
 }
 
 body {
+font-family: 'Roboto', sans-serif;
+color: var(--body);
 
 }
 
@@ -22,19 +25,34 @@ body {
     color: var(--pressedState);
     
 }
+a {
+    text-decoration: none;
+  }
 
+  li {
+    list-style-type: none;
+  }
 /*--Header--*/
 
-.accentLogo {
+.accent-logo {
     color: var(--primaryBrand);
 }
 
 .logo {
     color: var(--dark);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.3;
 }
 
-.nav {
-    color:var(--dark)
+.nav-item {
+    color:var(--dark);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .nav-item:active{
@@ -44,7 +62,12 @@ body {
 
 /*--Contacts--*/
 .contacts-item {
-    color: var(--text);
+color: var(--text);
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
 }
 .contacts-item:active{
     color: var(--pressedState);
@@ -56,23 +79,44 @@ body {
     background-color: var(--heroBackground);
 }
 
-.heroText {
+.hero-text {
     color: var(--hero);
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
 }
 
-.heroButton {
+.hero-button {
     color: var(--hero);
     background-color: var(--primaryBrand);
     border: none;
+    cursor: pointer;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;;
 }
 
-.heroButton:hover,
-.heroButton:focus{
+.hero-button:hover,
+.hero-button:focus{
     background-color: var(--pressedState);
 }
 /*--Benefits--*/
 .title {
     color: var(--dark);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize
+    
 }
 
 .hidden {
@@ -87,49 +131,84 @@ body {
     clip-path: inset (50%);
     margin: -1px;
 }
-.sibtile {
+.subtitle {
     color: var(--dark);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
 }
 
 .text {
     color: var(--text);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 /*--Works--*/
 /*--Team--*/
-.sectionTeam {
+.section-team {
     background-color: var(--light);
 }
-.teamItem {
+.team-item {
     background-color: var(--hero);
+}
+
+.team-item text,
+.team-item subtitle {
+    text-align: center;
 }
 /*--Filter--*/
 
-.filterButton {
+.filter-button {
     color: var(--primaryBrand);
     background-color: var(--accent);
     border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
-.filterButton:hover,
-.filterButton:focus {
+.filter-button:hover,
+.filter-button:focus {
     background-color: var(--pressedState);
     color: var(--hero);
 }
 /*--Projects--*/
-.projectSubtitle {
+.project-subtitle {
     color: var(--dark);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
-.projectText {
+.project-text {
 color: var(--text);
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
 }
 /*--Footer--*/
-.logoFooter {
+.logo-footer {
     color: var(--light);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
 footer {
     background-color: var(--dark);
 }
 
-.textFooter {
+.text-footer {
     color: var(--accent);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
