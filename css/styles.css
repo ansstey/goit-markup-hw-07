@@ -16,6 +16,7 @@
 body {
 font-family: 'Roboto', sans-serif;
 background-color: var(--hero);
+color: var(--dark);
 
 
 }
@@ -32,6 +33,12 @@ background-color: var(--hero);
 
   .list-item {
     list-style-type: none;
+
+  }
+
+  .hero-button,
+  .filter-button {
+    border-radius: 4px; 
   }
 /*--Header--*/
 .line {
@@ -91,10 +98,9 @@ letter-spacing: 0.02em;
     color: var(--hero);
     font-size: 56px;
     line-height: 1.07;
-    text-align: center;
+    max-width: 496px;
     letter-spacing: 0.02em;
-    text-transform: capitalize;
-    max-width: 700px;
+   
     
 }
 
