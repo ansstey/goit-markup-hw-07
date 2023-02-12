@@ -17,10 +17,32 @@ body {
 font-family: 'Roboto', sans-serif;
 background-color: var(--hero);
 color: var(--dark);
-
-
 }
 
+h1, h2, h3, p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.container {
+    max-width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 /*--Common--*/
 
 .current {
@@ -39,11 +61,28 @@ color: var(--dark);
   .hero-button,
   .filter-button {
     border-radius: 4px; 
+    
   }
+
+  *, ::after, ::before {
+    box-sizing: border-box;
+}
 /*--Header--*/
 .line {
-    box-sizing: border-box;
-border-bottom: 1px solid #E7E9FC;
+box-sizing: border-box;
+border-bottom: 1px solid var(--accent);
+}
+
+.header {
+    border-color: var(--accent);
+    border-style: solid;
+    border-width: 0 0 1px 0;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .accent-logo {
@@ -58,6 +97,18 @@ border-bottom: 1px solid #E7E9FC;
     line-height: 1.3;
     text-transform: uppercase;
     letter-spacing: 0.02em;
+    margin-right: 76px;
+    margin-left: 0px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
 }
 
 .nav-item {
@@ -72,9 +123,23 @@ border-bottom: 1px solid #E7E9FC;
 .nav-item:focus {
     color: var(--pressedState);
 }
+.nav-item:not(:last-child) {
+    margin-right: 40px;
+  }
 
 
 /*--Contacts--*/
+
+.address {
+    font-style: normal;
+    margin-left: auto;
+}
+
+.contacts-list
+{
+    display: flex;
+    align-items: center;
+}
 .contacts-item {
 color: var(--text);
 font-weight: 400;
@@ -87,10 +152,17 @@ letter-spacing: 0.02em;
     color: var(--pressedState);
 }
 
+.list-item:not(:last-child) {
+    margin-right: 40px;
+}
+
 /*--Hero--*/
 
 .hero {
     background-color: var(--dark);
+    padding-top: 188px;
+    padding-bottom: 188px;
+    text-align: center;
 }
 
 
@@ -100,7 +172,9 @@ letter-spacing: 0.02em;
     line-height: 1.07;
     max-width: 496px;
     letter-spacing: 0.02em;
-   
+    padding-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 
@@ -114,7 +188,11 @@ letter-spacing: 0.02em;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.04em;;
+    letter-spacing: 0.04em;
+    min-width: 169px;
+    min-height: 56px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .hero-button:hover,
@@ -122,13 +200,36 @@ letter-spacing: 0.02em;
     background-color: var(--pressedState);
 }
 /*--Benefits--*/
+.benefits {
+    padding-top: 112px;
+    padding-bottom: 128px;
+}
+
+.list-benefits {
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.benefits-item {
+    flex-basis: calc((100% - 72px) / 4);
+    list-style-type: none;
+   width: 264px;
+
+  }
+
+  .benefits-item:not(:last-child) {
+    padding-right: 24px;
+}
+
 .title {
     color: var(--dark);
     font-size: 36px;
     line-height: 1.1;
     text-align: center;
     letter-spacing: 0.02em;
-    text-transform: capitalize
+    text-transform: capitalize;
+    margin-bottom: 72px;
     
 }
 
@@ -150,6 +251,7 @@ letter-spacing: 0.02em;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .text {
@@ -157,22 +259,82 @@ letter-spacing: 0.02em;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    
 
 }
 /*--Works--*/
+
+.works {
+    padding-top: 0px;
+    padding-bottom: 120px;
+}
+
+.works-list {
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: flex-start;
+}
+.works-item {
+    flex-basis: calc((100% - 48px) / 3);
+    list-style-type: none;
+   width: 1124px;
+
+  }
+
+  .works-item:not(:last-child) {
+    padding-right: 24px;
+}
+
+.works-item:last-child {
+    padding-right: 0px;
+}
 /*--Team--*/
 .section-team {
     background-color: var(--light);
+    padding-top: 120px;
+    padding-bottom: 120px;
+
 }
+
+.team-list {
+    display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+}
+
+ .team-item:last-child {
+    margin-right: 0px;
+ }
+
 .team-item {
-    background-color: var(--hero);
+    flex-basis: calc(100%-72px / 4);
+    list-style-type: none;
+
 }
 
 .team-item text,
 .team-item subtitle {
     text-align: center;
 }
+
+.team-item-description {
+    
+    background: var(--hero);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+      0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+    text-align: center;
+    padding: 32px 49px 32px 49px;
+    
+}
 /*--Filter--*/
+
+.filter {
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
 
 .filter-button {
     color: var(--primaryBrand);
@@ -184,13 +346,59 @@ letter-spacing: 0.02em;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-}
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    min-height: 48px;
+    }
 .filter-button:hover,
 .filter-button:focus {
     background-color: var(--pressedState);
     color: var(--hero);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
+  
+}
+
+.filter-item {
+    list-style-type: none;
+}
+
+.filter-item:not(:last-child) {
+    margin-right: 24px;
 }
 /*--Projects--*/
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+    
+}
+
+.project-item {
+    flex-basis: calc(100%- 48px / 3);
+    list-style-type: none;
+}
+
+.project-item:last-child {
+    margin-right: 0;
+}
+
+.project-desc {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    border: 1px solid var(--accent);
+    border-top: none;
+}
+
 .project-subtitle {
     color: var(--dark);
     font-weight: 500;
@@ -217,6 +425,8 @@ letter-spacing: 0.02em;
 
 footer {
     background-color: var(--dark);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .text-footer {
@@ -224,4 +434,11 @@ footer {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    max-width: 264px;
+    margin-top: 16px;
+}
+.logo-footer {
+    padding-bottom: 16px;
+    margin-right: auto;
+    padding: 0;
 }
