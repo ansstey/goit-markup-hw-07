@@ -272,16 +272,13 @@ letter-spacing: 0.02em;
 .works-list {
 
   display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  align-items: flex-start;
+  
+  
 }
-.works-item {
-    flex-basis: calc((100% - 48px) / 3);
+ 
+.works-item: {
     list-style-type: none;
-   width: 1124px;
-
-  }
+}
 
   .works-item:not(:last-child) {
     padding-right: 24px;
