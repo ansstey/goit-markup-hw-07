@@ -272,13 +272,12 @@ letter-spacing: 0.02em;
 .works-list {
 
   display: flex;
+  list-style-type: none;
   
   
 }
  
-.works-item: {
-    list-style-type: none;
-}
+
 
   .works-item:not(:last-child) {
     padding-right: 24px;
