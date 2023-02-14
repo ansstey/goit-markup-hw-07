@@ -75,14 +75,12 @@ border-bottom: 1px solid var(--accent);
 
 .header {
     border-color: var(--accent);
-    border-style: solid;
-    border-width: 0 0 1px 0;
+    
 }
 .header-container {
     display: flex;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    
 }
 
 .accent-logo {
@@ -117,6 +115,8 @@ border-bottom: 1px solid var(--accent);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .nav-item:hover,
@@ -172,7 +172,7 @@ letter-spacing: 0.02em;
     line-height: 1.07;
     max-width: 496px;
     letter-spacing: 0.02em;
-    padding-bottom: 48px;
+    margin-bottom: 48px;
     margin-left: auto;
     margin-right: auto;
     
@@ -214,7 +214,6 @@ letter-spacing: 0.02em;
 .benefits-item {
     flex-basis: calc((100% - 72px) / 4);
     list-style-type: none;
-   width: 264px;
 
   }
 
@@ -378,7 +377,7 @@ letter-spacing: 0.02em;
 }
 
 .project-item {
-    flex-basis: calc(100%- 48px / 3);
+    flex-basis: calc((100% - 48px) / 3);
     list-style-type: none;
 }
 
