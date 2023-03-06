@@ -117,7 +117,7 @@ border-bottom: 1px solid var(--accent);
     padding-top: 24px;
     padding-bottom: 24px;
     display: block;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-item:hover,
@@ -139,6 +139,11 @@ border-bottom: 1px solid var(--accent);
       height: 4px;
       border-radius: 2px;
       background-color: var(--pressedState);
+    
+  }
+
+  .link-studio {
+    color: var(--pressedState);
   }
 
   .list-item {
@@ -164,7 +169,7 @@ font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-item:hover,
 .contacts-item:focus {
@@ -220,7 +225,7 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     min-height: 56px;
     padding-top: 16px;
     padding-bottom: 16px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -391,12 +396,12 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     justify-content: center;
     background-color: var(--primaryBrand);
     border-radius: 50%;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .team-soc-link:hover,
   .team-soc-link:focus {
-    background: var(--pressedState);
+    background-color: var(--pressedState);
   }
 
 /*--Customers--*/ 
@@ -434,7 +439,7 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     align-items: center;
     justify-content: center;
     color: var(--subtleText);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .customers-icon {
@@ -467,6 +472,10 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding-left: 24px;
     padding-right: 24px;
     min-height: 48px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
 .filter-button:hover,
@@ -503,7 +512,7 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .project-item {
     flex-basis: calc((100% - 48px) / 3);
     list-style-type: none;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-item:last-child {
@@ -512,6 +521,8 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .project-link {
     display: block;
 }
+
+
 
 .project-link:is(:hover, :focus) {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -639,7 +650,7 @@ footer {
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .footer-social-link:is(:hover, :focus) {
@@ -690,6 +701,7 @@ footer {
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
   }
   .modal-btn-icon {
     width: 8px;
