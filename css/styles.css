@@ -42,6 +42,16 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
 /*--Common--*/
 
 .current {
@@ -656,6 +666,89 @@ footer {
   .footer-social-link:is(:hover, :focus) {
     background-color: var(--success);
   }
+    /*-- Footer Form --*/
+
+    .subscribe-form {
+    position: relative;
+    }
+
+        .footer-form {
+         
+         display: flex;
+          margin-left: auto;
+        }
+    
+        .footer-form-title {
+          color: var(--hero);
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 1.5;
+          letter-spacing: 2%;
+          margin-bottom: 16px;
+        }
+    
+        .footer-form-submit {
+          background-color: var(--primaryBrand);
+          color: var(--hero);
+          line-height: 1.5;
+          border: none;
+          cursor: pointer;
+          border-radius: 4px;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 1.5;
+          letter-spacing: 4%;
+          margin-left: 16px;
+          padding: 8px 16px;
+          width: 165px;
+          height: 40px;
+                  position: relative;
+          transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+    
+        .footer-form-submit:hover,
+        .footer-form-submit:focus {
+          background-color: var(--pressedState);
+        }
+    
+        .footer-form-input {
+          width: 264px;
+          height: 40px;
+          border: 1px solid var(--hero);
+          background-color: inherit;
+          border-radius: 4px;
+          
+          color: var(--hero);
+          font-size: 16px;
+          line-height: 1.33;
+          padding-left: 16px;
+          font-weight: 400;
+          transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+          
+          
+        }
+    
+        .footer-form-input:focus {
+          outline: none;
+          background-color: inherit;
+          color: var(--hero);
+          border-color: var(--hero);
+        }
+    
+        
+        .footer-form-input-icon {
+          position: absolute;
+          top: 50%;
+          right: 10px;
+    
+          transform: translateY(50%);
+          fill: var(--hero);
+          height: 20px;
+          width: 24px;
+          position: absolute;
+        
+        }
 
   /*-- Modal window --*/
   .backdrop {
@@ -686,6 +779,7 @@ footer {
     border-radius: 4px;
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 3px rgba(0, 0, 0, 0.12),
       0px 1px 1px rgba(0, 0, 0, 0.14);
+        padding: 72px 24px 24px 24px;
   }
   .modal-btn {
     position: absolute;
@@ -716,3 +810,151 @@ footer {
   .modal-btn:focus .modal-btn-icon {
     fill: var(--hero);
   }
+
+
+
+
+  /*--LLAA--*/
+    .modal-form {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .modal-form-title {
+      font-weight: 500px;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 2%;
+      margin-bottom: 14px;
+      color: var(--dark);
+      text-align: center;
+    }
+  
+    .modal-form-field {
+      margin-bottom: 0px;
+    }
+  
+    .modal-form-input-wraper {
+      position: relative;
+      display: block;
+      margin-bottom: 8px;
+    }
+  
+    .modal-form-input-icon {
+      position: absolute;
+      top: 50%;
+      left: 16px;
+      transform: translate(0, -50%);
+      height: 18px;
+      width: 18px;
+      fill: var(--dark);
+    }
+  
+    .modal-form-input-icon:hover {
+      fill: #4d5ae5;
+    }
+  
+    .modal-form-imput {
+      width: 100%;
+      height: 40px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 4px;
+      padding-left: 38px;
+      color: #000000;
+      font-size: 16px;
+      line-height: 1.33;
+      margin-bottom: 0px;
+      font-weight: 400;
+  
+      transition: border-color250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  
+    .modal-form-imput:focus {
+      outline: none;
+      border-color: var(--primaryBrand);
+    }
+  
+    .modal-form-imput:focus+.modal-form-input-icon {
+      fill: var(--primaryBrand);
+    }
+  
+    .modal-form-input-desc {
+      display: block;
+      font-size: 12px;
+      line-height: 1.33;
+      margin-bottom: 4px;
+      font-weight: 400;
+      color: var(--subtleText);
+    }
+  
+    .modal-form-message {
+      resize: none;
+      width: 100%;
+      height: 120px;
+      padding: 8px 16px 8px 16px;
+      border-radius: 4px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  
+    .modal-form-message:focus {
+      outline: none;
+      border-color: var(--primaryBrand);
+    }
+  
+    .modal-form-check-desc {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.33;
+      letter-spacing: 4%;
+      color: var(--subtleText);
+      margin-top: 8px;
+      margin-bottom: 24px;
+    }
+  
+    .modal-form-check-desc::before {
+      display: block;
+      border: 1.25px solid var(--dark);
+      border-radius: 2px;
+      width: 16px;
+      height: 16px;
+      content: "";
+      cursor: pointer;
+      margin-right: 8px;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  
+    .modal-form-check:checked+.modal-form-check-desc::before {
+      background-color: var(--pressedState);
+      border: none;
+      outline: none;
+      background-image: url(../images/vector.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  
+    .modal-form-check:focus+.modal-form-check-desc::before {
+      outline: none;
+      border: 2px solid #404bbf;
+    }
+  
+    .modal-form-submit {
+      background-color: var(--primaryBrand);
+      color: var(--hero);
+      line-height: 1.5;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 4%;
+      margin: auto;
+      width: 169px;
+      padding: 16px 32px;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      margin-bottom: 24px;}
+    
