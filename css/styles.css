@@ -697,12 +697,14 @@ footer {
           font-weight: 500;
           font-size: 16px;
           line-height: 1.5;
-          letter-spacing: 4%;
+          letter-spacing: 0.02em;
           margin-left: 16px;
-          padding: 8px 16px;
+          padding: 8px 24px;
           width: 165px;
           height: 40px;
-                  position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
         
@@ -738,15 +740,11 @@ footer {
     
         
         .footer-form-input-icon {
-          position: absolute;
-          top: 50%;
-          right: 10px;
-    
-          transform: translateY(50%);
+         
+          margin-left: 16px;
           fill: var(--hero);
           height: 20px;
           width: 24px;
-          position: absolute;
         
         }
 
@@ -831,13 +829,13 @@ footer {
     }
   
     .modal-form-field {
-      margin-bottom: 0px;
+      margin-bottom: 8px;
+      display: block;
     }
   
     .modal-form-input-wraper {
       position: relative;
       display: block;
-      margin-bottom: 8px;
     }
   
     .modal-form-input-icon {
@@ -888,6 +886,7 @@ footer {
     }
   
     .modal-form-message {
+      display: block;
       resize: none;
       width: 100%;
       height: 120px;
@@ -908,10 +907,11 @@ footer {
       font-size: 12px;
       font-weight: 400;
       line-height: 1.33;
-      letter-spacing: 4%;
+      letter-spacing: 0.04em;
       color: var(--subtleText);
       margin-top: 8px;
       margin-bottom: 24px;
+    
     }
   
     .modal-form-check-desc::before {
@@ -931,7 +931,7 @@ footer {
       background-color: var(--pressedState);
       border: none;
       outline: none;
-      background-image: url(../images/vector.svg);
+      background-image: url(../images/vektor.svg);
       background-position: center;
       background-repeat: no-repeat;
     }
@@ -951,10 +951,14 @@ footer {
       font-weight: 500;
       font-size: 16px;
       line-height: 1.5;
-      letter-spacing: 4%;
+      letter-spacing: 0.04em;
       margin: auto;
       width: 169px;
       padding: 16px 32px;
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      margin-bottom: 24px;}
+      }
+
+      .privacy {
+        color: var(--primaryBrand);
+      }
     
